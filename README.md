@@ -195,9 +195,3 @@ This project builds upon concepts and implementations from the original [git-mcp
 ## 🤝 Contributing
 
 Contributions welcome! This MCP server helps developers work more efficiently with their local codebases.
-
----
-
-<div align="center">
-<sub>Built with ❤️ for the developer community</sub>
-</div>

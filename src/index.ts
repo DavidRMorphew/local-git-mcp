@@ -1,12 +1,11 @@
 import { Server } from "@modelcontextprotocol/sdk/server/index.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import {
-  CallToolRequest,
-  ListToolsRequest,
+  CallToolRequestSchema,
+  ListToolsRequestSchema,
   ErrorCode,
   McpError,
 } from "@modelcontextprotocol/sdk/types.js";
-import { z } from "zod";
 
 import { GitService } from "./services/git-service.js";
 import { FileService } from "./services/file-service.js";
@@ -66,15 +65,7 @@ class LocalGitMCPServer {
   }
 
   private setupHandlers() {
-    const listToolsSchema = z.object({
-      method: z.literal("tools/list"),
-    });
-
-    const callToolSchema = z.object({
-      method: z.literal("tools/call"),
-    });
-
-    this.server.setRequestHandler(listToolsSchema, async () => ({
+    this.server.setRequestHandler(ListToolsRequestSchema, async () => ({
       tools: [
         {
           name: "fetch_documentation",
@@ -134,7 +125,7 @@ class LocalGitMCPServer {
       ],
     }));
 
-    this.server.setRequestHandler(callToolSchema, async (request: any) => {
+    this.server.setRequestHandler(CallToolRequestSchema, async (request) => {
       const { name, arguments: args } = request.params;
 
       const tool = this.tools.get(name);

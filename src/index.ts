@@ -8,12 +8,12 @@ import {
 } from "@modelcontextprotocol/sdk/types.js";
 import { z } from "zod";
 
-import { GitService } from "./services/git-service";
-import { FileService } from "./services/file-service";
-import { SearchService } from "./services/search-service";
-import { DocumentationTool } from "./tools/documentation";
-import { SearchTool } from "./tools/search";
-import { CodeAnalysisTool } from "./tools/code-analysis";
+import { GitService } from "./services/git-service.js";
+import { FileService } from "./services/file-service.js";
+import { SearchService } from "./services/search-service.js";
+import { DocumentationTool } from "./tools/documentation.js";
+import { SearchTool } from "./tools/search.js";
+import { CodeAnalysisTool } from "./tools/code-analysis.js";
 
 class LocalGitMCPServer {
   private server: Server;

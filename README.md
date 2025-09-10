@@ -63,7 +63,11 @@ Create a `mcp.json` file in your project's `.vscode` folder:
 }
 ```
 
-### 4. Start Using It!
+### 4. Hit `Start`
+
+![Start MCP](public/startmcp.png)
+
+### 5. Start Using It!
 
 Ask your AI assistant to search your **locally cloned** repos using their **full local paths**:
 

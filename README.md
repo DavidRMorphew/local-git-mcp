@@ -27,7 +27,7 @@ Transform any MCP-compatible client (like GitHub Copilot Chat) into a powerful c
 
 ```bash
 # Clone and install
-git clone https://git@github.com:DavidRMorphew/local-git-mcp.git
+git clone https://github.com/DavidRMorphew/local-git-mcp.git
 cd local-git-mcp
 npm install
 

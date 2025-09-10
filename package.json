@@ -1,9 +1,30 @@
 {
   "name": "local-git-mcp",
   "version": "1.0.0",
-  "description": "Local Git MCP Server - Enterprise-friendly offline version",
+  "description": "Supercharge your AI coding assistant with offline access to your local Git repositories",
   "main": "dist/index.js",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DavidRMorphew/local-git-mcp.git"
+  },
+  "author": "David Ryan Morphew",
+  "license": "Apache-2.0",
+  "keywords": [
+    "mcp",
+    "git",
+    "search",
+    "documentation",
+    "ai",
+    "copilot",
+    "offline",
+    "local",
+    "repository"
+  ],
+  "homepage": "https://github.com/DavidRMorphew/local-git-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/DavidRMorphew/local-git-mcp/issues"
+  },
   "scripts": {
     "build": "tsc",
     "dev": "tsx watch src/index.ts",

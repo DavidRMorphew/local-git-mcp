@@ -115,14 +115,6 @@ Use fetch_documentation with:
 
 > ⚠️ **Remember**: The `repository_path` must point to a **locally cloned** Git repository on your file system!
 
-## 🎯 Perfect For
-
-- **Learning New Codebases** - Quickly understand project structure and conventions
-- **Code Reviews** - Find similar patterns and best practices in your existing code
-- **Documentation Discovery** - Surface relevant docs you didn't know existed
-- **Refactoring** - Find all usages of patterns you want to change
-- **Onboarding** - Help new team members navigate large projects
-
 ## 🏗 Architecture Overview
 
 ```
